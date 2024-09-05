@@ -70,6 +70,10 @@ $ npm run test
 $ npm run test:cov
 ```
 
+## Git Hooks
+
+Husky library is managing the pre-commit, pre-push and commit lint using @commitlint/config-conventional.
+
 ## OpenApi Docs
 
 The API documentation is created automatically in http://localhost:3000/docs
