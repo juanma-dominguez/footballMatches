@@ -25,6 +25,12 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 ```
+Rename the .env.template file to .env and add the local mongodb uri connection.
+
+```bash
+MONGODB_CONNECTION_STRING=mongodb://localhost:27017/wamesports
+PORT=3000
+```
 
 Install npm dependencies.
 
