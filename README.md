@@ -1,6 +1,6 @@
 ## Description
 
-this is a Nest js microservice for Footbal matches.
+This is a Nestjs microservice for creating Footbal matches.
 
 ## Project setup
 
@@ -32,6 +32,13 @@ Install npm dependencies.
 $ npm install
 ```
 
+This project uses a mongodb instance. To run the database use
+
+```bash
+$ npm infra:up
+$ npm infra:down
+```
+
 ## Compile and run the project
 
 ```bash
@@ -47,13 +54,22 @@ $ npm run start:prod
 
 ## Run tests
 
+This projects combine unit and e2e testing. For e2e testing we use the testcontainers library. It creates a mongodb instance only for testing purposes.
+
 ```bash
 # unit tests
-$ npm run test
+$ npm run test:unit
 
 # e2e tests
 $ npm run test:e2e
 
+# test all
+$ npm run test
+
 # test coverage
 $ npm run test:cov
 ```
+
+## OpenApi Docs
+
+The API documentation is created automatically in http://localhost:3000/docs
